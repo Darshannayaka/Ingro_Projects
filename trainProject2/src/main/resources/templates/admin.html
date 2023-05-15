@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<link rel="icon" href="img/train-icon.ico" type="image/x-icon">
+<title>Register</title>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+	crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" type="text/css" th:href="@{/CSS/admin.css}">
+</head>
+<body>
+<h1 align="center">TRAVELLING TRAIN</h1>
+<img  src="/img/steamTrain.jpg" style="width:100%; height: 400px">
+<table>
+<tr>
+	    <th width="8%" ><a th:href="@{/admin/adminLogin}">Home Page</a></th>
+		<th width="8%" ><a th:href="@{/admin/list_users/0}">List All Users</a></th>
+		<th width="8%"><a th:href="@{/admin/trainMaster}">Train Master</a></th>
+		<th width="8%"><a th:href="@{/admin/addTrain}">Add Train</a></th>
+		<th width="8%"><a th:href="@{/admin/allTrains/0}">Show Train</a></th>
+		<th width="8%"><a th:href="@{/admin/displayTrainAndPassenger/0}">Display Train & Passenger</a></th>
+		<th width="8%"><a th:href="@{/logout}">Logout</a></th>
+</tr>
+
+</table>
+<div class="d-flex justify-content-center">
+	<div class="column1" style="background-colour:#232323;">
+	<div class="h2">
+	<img src="/img/modernTrain1.jpg" class="image-responsive1" style="width: 100%; height: 200px">
+	<h2>Duronto</h2>
+	</div>
+	<p>Long-distance trains with limited stops, these trains connect major state capitals and metropolitan cities of the country. Other than these, there are also super fast trains, express trains, Jan Shatabdi, Mail, Rajya Rani and Jansadharan ...</p>
+	<button>More Info</button>
+	</div>
+		
+	<div class="column2" style="background-colour:#232323">
+	<div class="h2">
+	<img src="/img/modernTrain2.jpg" class="image-responsive2" style="width: 100%; height: 200px">
+	<h2>Rajdhani</h2>
+	</div>
+	<p>Connecting some of the major cities of India with the capital city of New Delhi, this is the highest priority Indian Railways. Just knowing the train schedule between two stations is not enough.you will get a list of all the trains that start from that ...</p>
+	<button>More Info</button>
+	</div>
+	
+	
+	<div class="column3" >
+	<div class="h2">
+	<img src="/img/modernTrain3.jpg" class="image-responsive3" style="width: 100%; height: 200px">
+	<h2>Intercity</h2>
+	</div>
+	<p>These trains run between two major cities and complete a round trip within a day. It only has chair cars and second sitters. Train Name, Starting Point and Destination. This is surely a simpler way to find a all the trains that start from train than asking for ...</p>
+	<button>More Info</button>
+	</div>
+	</div>
+	
+		      <!-- Footer -->
+<footer class="text-center text-start bg-dark text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center  p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5  font-weight-bold text-warning">
+        <h5>Get connected with us on social networks:</h5>
+      </div>
+      <!-- Left -->
+  
+      <!-- Right -->
+      <div>
+ <a href="" class="me-4 btn-floating btn-sm text-white">
+          <i class="fab fa-facebook-f fa-2xl"></i>
+        </a>
+        <a href="" class="me-4 btn-floating btn-sm text-white">
+          <i class="fab fa-twitter fa-2xl"></i>
+        </a>
+        <a href="" class="me-4 btn-floating btn-sm text-white">
+          <i class="fab fa-google fa-2xl"></i>
+        </a>
+        <a href="" class="me-4 btn-floating btn-sm text-white">
+          <i class="fab fa-instagram fa-2xl"></i>
+        </a>
+        <a href="" class="me-4 btn-floating btn-sm text-white">
+          <i class="fab fa-linkedin fa-2xl"></i>
+        </a>
+       
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-3">
+        <!-- Grid row -->
+        <div class="row mt-2">
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-3 col-xl-5 mx-auto mb-3">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4 font-weight-bold text-warning">
+              <i class="me-3 font-weight-bold text-warning"></i>Company name
+            </h6>
+            <p class="text-white" style="text-decoration: none;">
+                IRCTC offers Exclusive Rail tour packages with confirmed train tickets, sight-seeing and meals for enchanting Nilgiri Mountains, Darjeeling, Manali, Kashmir, Gangtok or divine tours of Mata Vaishno Devi, Rameswaram, Madurai, Shirdi, Tirupati etc. Holiday packages/ Land packages to these destinations are also available.
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2   mx-auto mb-2">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-3 font-weight-bold text-warning">
+              Useful links
+            </h6>
+            <p>
+              <a href="#!" class="text-white" style="text-decoration: none;">Your Account</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white" style="text-decoration: none;">Refund Rules</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white" style="text-decoration: none;">disability facilities</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white" style="text-decoration: none;">Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2  mb-2">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-2 font-weight-bold text-warning">
+                Products
+            </h6>
+            <p>
+              <a href="#!" class="text-white" style="text-decoration: none;">Catering Service</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white" style="text-decoration: none;">General Information</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white" style="text-decoration: none;">Creativity</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white" style="text-decoration: none;">Cancel Enquiry</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-2 col-xl-3 mx-auto mb-md-0 mb-2">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4 font-weight-bold text-warning">Contact</h6>
+            <p class="text-white" style="text-decoration: none;"><i class="fa-solid fa-train me-3"></i> IRCTC Exclusive, India</p>
+            <p class="text-white" style="text-decoration: none;"><i class="fas fa-envelope me-3"></i>IRCTC@gmail.com</p>
+            <p class="text-white" style="text-decoration: none;"><i class="fas fa-phone me-3"></i> IRCTC Helpline Number</p>
+            <p class="text-white" style="text-decoration: none;"><i class="fas fa-print me-3"></i> About IRCTC</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4 font-weight-bold text-warning" >
+        Copyright &copy; 2023 - . All Rights Reserved
+
+      <a class="text-reset font-weight-bold text-warning " style="text-decoration: none;" href="https://ingroinfo.com/">www.ingrOinfo.in</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+</body>
+</html>
